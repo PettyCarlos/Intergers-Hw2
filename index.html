@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+
+<html lang = "en">
+
+<head>
+    <meta name="description" content= "CNIT 133 Homework 2 - Basic Operations. ">
+    <meta charset = "UTF-8" >
+   
+    
+    <style>
+        
+    
+      body {
+          background-color:cadetblue
+      }
+         #holygrail-container{display:grid; grid-template-columns: 190px 1fr 190px; background: cadetblue; height: 100%; min-width: 400px; min-height: 270px;
+         }
+        
+         header, footer {grid-column: span 4;
+                        }
+         
+         nav {display: inline; padding-bottom: 25px; display: flex; align-items: center;
+             }
+           
+            nav ul{list-style-type:none; padding:0; 
+                  }
+            
+            nav ul li{ display: inline-block;
+                       margin:0 5px;
+                       border:2px solid black;
+                      border-radius: 10px;
+                       margin-right: 350px;
+                       background-color: cadetblue;
+                       text-align:center;
+                       width: 150px;
+                       height: 30px; 
+                       line-height:30px;
+                        margin-bottom: 5px;}
+            
+            nav ul li a {text-decoration: none; font-weight: bold; color:white;
+                        }
+         
+         ul li { list-style-type: none; 
+          }
+ </style>
+         
+
+    
+ <title>CNIT 133 HOMEWORK 2 - BASIC OPERATIONS</title>
+     
+</head>
+
+    <body>
+        
+          <header>
+  <h1 style="text-align:center">CNIT 133 HOMEWORK 2 - BASIC OPERATIONS</h1>
+            </header>
+         
+             <nav>
+    <ul>
+            <li><a href="https://pettycarlos.github.io/CNIT-133-Homework-1/">Homepage</a></li>
+            <li><a href="https://pettycarlos.github.io/homework1/">Homework 2</a></li>
+            <li><a href="https://pettycarlos.github.io/Assignment/">Homework 3</a></li>
+            <li><a href="https://pettycarlos.github.io/MeetupReport/">Homework 4</a></li>
+            <li><a href="https://pettycarlos.github.io/Contact-Me-Form/">Homework 5</a></li>
+            <li><a href="https://pettycarlos.github.io/Contact-Me-Form/">Homework 6</a></li>
+            <li><a href="https://pettycarlos.github.io/Contact-Me-Form/">Homework 7</a></li>
+            <li><a href="https://pettycarlos.github.io/Contact-Me-Form/">Homework 8</a></li>
+            
+        </ul>
+            </nav>
+            
+        
+         <ol>
+  <li><a href="DocumentWritingStatement.html">Part 1 - Writing Script Using Document Writing Statements</a></li>
+  <li><a href="integers.html">Part 2 - Input 3 integers Via Text Boxes</a></li>
+  <li><a href="jquery.html">Part 3 - Using jQuery to Display 'Click to Show/Hide Instructions'</a></li>
+</ol>
+       <script>
+function calculation()
+{
+   var num1, num2, num3, sum, avg, product, result;
+
+    num1 = parseInt(document.form.fnum1.value);
+    num2 = parseInt(document.form.fnum2.value);
+    num3 = parseInt(document.form.fnum3.value);
+
+    sum = num1 + num2 + num3;
+    avg = (num1 + num2 + num3)/3;
+    product = num1 * num2 * num3;
+    min = Math.min(num1, num2, num3);
+    max = Math.max(num1, num2, num3);
+
+    
+    document.form.result1.value = sum;
+    document.form.result2.value = avg;
+    document.form.result3.value = product;
+    document.form.result4.value = max;
+    document.form.result5.value = min;
+                                   
+}
+    </script>
+        
+        <h1>Enter a value for each of the 3 number boxes:</h1>
+
+        <form name="form">
+  Input a value
+  <input type="number" name="fnum1" >
+            
+  Input a value
+  <input type="number" name="fnum2" >
+            
+  Input a value
+  <input type="number" name="fnum3" >
+            
+ <input type="button" value="submit" onclick="calculation()"><br><br>
+            
+ The Sum of the 3 values are: <br>
+  <input type="number" name="result1" ><br>
+            
+ The Avgerage of the 3 values are: <br>
+  <input type="number" name="result2" ><br>
+            
+ The Product of the 3 values are: <br>
+  <input type="number" name="result3" ><br>
+            
+ The Highest Value of the 3 values is:<br>
+  <input type="number" name="result4" ><br>
+            
+ The Smallest Value of the 3 values is:<br>
+  <input type="number" name="result5" >
+
+        </form>
+       
+        
+        
+
+            
+            
+    </body>
+     
+      
+      
+</html>
+        
